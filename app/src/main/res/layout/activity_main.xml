@@ -23,12 +23,12 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:text="Siguiente" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:text="EDITAR" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -47,7 +47,7 @@
                     android:layout_weight="1"
                     android:ems="10"
                     android:inputType="textPersonName"
-                    android:text="Name" />
+                    android:text="Nombre" />
 
                 <TextView
                     android:id="@+id/textView2"
@@ -70,7 +70,7 @@
                     android:layout_weight="1"
                     android:ems="10"
                     android:inputType="textPersonName"
-                    android:text="Name" />
+                    android:text="EMAIL" />
 
                 <TextView
                     android:id="@+id/textView2"
@@ -93,7 +93,7 @@
                     android:layout_weight="1"
                     android:ems="10"
                     android:inputType="textPersonName"
-                    android:text="Name" />
+                    android:text="Telefono" />
 
                 <TextView
                     android:id="@+id/textView2"
@@ -116,7 +116,7 @@
                     android:layout_weight="1"
                     android:ems="10"
                     android:inputType="textPersonName"
-                    android:text="Name" />
+                    android:text="Dirección" />
 
                 <TextView
                     android:id="@+id/textView2"
@@ -126,6 +126,18 @@
                     android:text="TextView" />
 
             </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fecha de inscripción"
+                android:textAppearance="@style/7" />
+
+            <DatePicker
+                android:id="@+id/datePicker2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
         </LinearLayout>
     </LinearLayout>
