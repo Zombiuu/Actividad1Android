@@ -8,11 +8,14 @@
 
     <LinearLayout
         android:id="@+id/ventanaUno"
-        android:layout_width="585dp"
-        android:layout_height="810dp"
+        android:layout_width="606dp"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="8dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/imageView2"
@@ -41,7 +44,7 @@
                 android:orientation="horizontal">
 
                 <EditText
-                    android:id="@+id/editText"
+                    android:id="@+id/lblNombre"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -49,13 +52,6 @@
                     android:inputType="textPersonName"
                     android:text="Nombre" />
 
-                <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="TextView" />
-
             </LinearLayout>
 
             <LinearLayout
@@ -64,7 +60,7 @@
                 android:orientation="horizontal">
 
                 <EditText
-                    android:id="@+id/editText"
+                    android:id="@+id/lblEmail"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -72,13 +68,6 @@
                     android:inputType="textPersonName"
                     android:text="EMAIL" />
 
-                <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="TextView" />
-
             </LinearLayout>
 
             <LinearLayout
@@ -87,21 +76,15 @@
                 android:orientation="horizontal">
 
                 <EditText
-                    android:id="@+id/editText"
+                    android:id="@+id/lblTelefono"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
+                    android:hint="placeholder"
                     android:inputType="textPersonName"
                     android:text="Telefono" />
 
-                <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="TextView" />
-
             </LinearLayout>
 
             <LinearLayout
@@ -110,29 +93,23 @@
                 android:orientation="horizontal">
 
                 <EditText
-                    android:id="@+id/editText"
+                    android:id="@+id/lblDireccion"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
                     android:inputType="textPersonName"
-                    android:text="Dirección" />
-
-                <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="TextView" />
+                    tools:text="Dirección" />
 
             </LinearLayout>
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/lblFecha"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Fecha de inscripción"
-                android:textAppearance="@style/7" />
+                android:contentDescription="Fecha de inscripción"
+                />
 
             <DatePicker
                 android:id="@+id/datePicker2"
